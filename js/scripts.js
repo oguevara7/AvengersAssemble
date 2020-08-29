@@ -35,7 +35,7 @@ $(document).ready(function () {
     dots: false,
     items: 1,
     lazyLoad: true,
-    lazyLoadEager: 1,
+    lazyLoadEager: 2,
     loop: true,
     nav: true,
     navSpeed: 500

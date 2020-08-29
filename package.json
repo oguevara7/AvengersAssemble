@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-sass": "node-sass styles/sass/main.scss styles/css/styles.css --watch"
+    "compile-sass": "node-sass styles/sass/main.scss styles/css/styles.css --watch",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "node-sass": "^4.14.1"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4"
   }
