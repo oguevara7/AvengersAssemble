@@ -1,0 +1,98 @@
+/********************************** FONTS ***********************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+
+@font-face {
+  font-family: 'Avengeance';
+  src: url("/Users/oscarguevara/Desktop/AvengersAssemble/resources/fonts/Avengeance-YolO.ttf") format("truetype");
+}
+
+/******************************** VARIABLES *********************************/
+$primaryFontFamily: 'Montserrat', sans-serif;
+$avengersFontFamily: 'Avengeance';
+$primaryFontColor: #FFFFFF;
+$secondaryFontColor: #0F151A;
+$messageTextFontColor: #303030;
+$messageDateFontColor: #00000073;
+$oscarMsgBackground: #DCF8C6;
+
+
+/********************************* PARTIALS *********************************/
+@import "partials/header";
+@import "partials/footer";
+@import "partials/home";
+@import "partials/moments";
+@import "partials/messages";
+
+
+/******************************* MAIN STYLES ********************************/
+html {
+  height: 100%;
+}
+
+body {
+  background: #FFF;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: $primaryFontFamily;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, p, a {
+  letter-spacing: 0.01em;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 67px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 47px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
+
+/***************************************************************************/
+/**************************** RESPONSIVE STYLING ***************************/
+/***************************************************************************/
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+}

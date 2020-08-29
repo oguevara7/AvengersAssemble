@@ -1,0 +1,159 @@
+.messages {
+  background-image: url("/Users/oscarguevara/Desktop/AvengersAssemble/build/wabg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  .search-container {
+    .search-bar {
+      position: relative;
+
+      #search {
+        background: #F7F7F7;
+        border: none;
+        border-radius: 100px;
+        font-size: 14px;
+        line-height: unset;
+        width: 100%;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .button-container {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+
+        button {
+          background: #F7F7F7;
+          border: none;
+
+          &:focus {
+            outline: none;
+          }
+
+          i.fas {
+            color: $secondaryFontColor;
+          }
+        }
+      }
+    }
+  }
+
+  .message {
+    border-radius: 7.5px;
+    box-shadow: 0 1px 0.5px rgba(48,48,48,.13);
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 2px;
+    max-width: 65%;
+    padding: 6px 7px 8px 9px;
+
+    &.initial {
+      .name {
+        display: inline-flex;
+        font-size: 14.8px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+
+    &.romi {
+      background: #FFF;
+
+      &.initial::before {
+        border-top: 20px solid #FFF;
+        border-left: 15px solid transparent;
+        content: '';
+        height: 0;
+        left: 7px;
+        position: absolute;
+        top: 0;
+        width: 0;
+      }
+
+      .name {
+        color: #ba33dc;
+      }
+    }
+
+    &.oscar {
+      float: right;
+      background: $oscarMsgBackground;
+
+      &.initial::after {
+        border-top: 20px solid $oscarMsgBackground;
+        border-right: 15px solid transparent;
+        content: '';
+        height: 0;
+        right: 7px;
+        position: absolute;
+        top: 0;
+        width: 0;
+      }
+
+      .name {
+        color: #b04632;
+      }
+    }
+
+    &.last {
+      margin-bottom: 12px;
+    }
+
+    .name {
+      display: none;
+    }
+
+    .text-container {
+      .text {
+        color: $messageTextFontColor;
+        font-size: 16.2px;
+        line-height: 21px;
+      }
+
+      .wa-space {
+        display: inline-block;
+        width: 138px;
+        vertical-align: middle;
+      }
+    }
+
+    .date {
+      color: $messageDateFontColor;
+      float: right;
+      font-size: 13px;
+      margin: -10px 0 -5px 4px;
+    }
+  }
+}
+
+
+
+
+/***************************************************************************/
+/**************************** RESPONSIVE STYLING ***************************/
+/***************************************************************************/
+
+@media (max-width: 767px) {
+  .messages {
+    .message {
+      max-width: 85%;
+
+      .text-container {
+        .wa-space {
+          display: none;
+        }
+      }
+
+      .date {
+        padding-top: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+footer {
+  background: #0F151A;
+  font-family: $primaryFontFamily;
+  padding: 30px 0;
+
+  .title {
+    a {
+      color: $primaryFontColor;
+      text-decoration: none;
+
+      h1 {
+        display: inline-block;
+        font-family: $avengersFontFamily;
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .nav-bttn {
+    text-align: right;
+
+    a {
+      color: $primaryFontColor;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+
+  .copy-container {
+    border-top: 1px solid #F7F7F7;
+    margin-top: 20px;
+
+    .copyright {
+      color: $primaryFontColor;
+      float: right;
+      font-size: 12px;
+      font-weight: 300;
+      padding-top: 20px;
+
+      .fa-heart {
+        color: #C21B3A;
+      }
+    }
+  }
+}
+
+
+
+
+/***************************************************************************/
+/**************************** RESPONSIVE STYLING ***************************/
+/***************************************************************************/
+
+@media (max-width: 767px) {
+  footer {
+    padding: 30px 0 20px;
+
+    .title {
+      a {
+        h1 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .nav-bttn {
+      a {
+        font-size: 12px;
+      }
+    }
+
+    .copy-container {
+      margin-top: 25px;
+
+      .copyright {
+        font-size: 10px;
+        float: unset;
+        padding-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

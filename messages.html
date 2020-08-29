@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="build/avengers.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Assemble | Messages</title>
+    <meta property=”og:title” content="Avengers Assemble | Messages" />
+    <meta property=”og:url” content="messages.html" />
+    <meta property=”og:type” content="website" />
+    <meta property=”og:description” content="A little detail for my girlfriend. LoveYou3000++" />
+    <meta property=”og:image” content="build/openGraph.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <header class="secondary-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="counter col-6 col-sm-6 col-md-8">
+                <a id="loveCounter" href="index.html">
+                  <i class="far fa-heart"></i>
+                  <span>I Love You</span>
+                </a>
+              </div>
+              <div class="nav-bttn col-3 col-sm-3 col-md-2">
+                <a href="moments.html">Moments</a>
+              </div>
+              <div class="nav-bttn col-3 col-sm-3 col-md-2">
+                <a href="messages.html">Messages</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="messages">
+      <div class="container">
+        <div class="row pt-2 pb-2 justify-content-end">
+          <div class="search-container col-8 col-sm-8 col-md-6 col-lg-5">
+            <div class="search-bar">
+              <input class="p-2" placeholder="Search" id="search" onkeypress="pressSearch(event)"/>
+              <div class="button-container">
+                <button id="myButton" type="button" onclick="search($('#search')[0].value)">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Love you 3000
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">27/04/19 10:23 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  Avengers Assemble
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">12/05/19 10:54 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Te quiero mucho, morra
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">29/05/19 2:11 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  En este caso, mi vulnerabilidad eres tú
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">04/06/19 10:04 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  I never expected to fall in love so quick <br />
+                  To wrap my arms around your neck and feel like I’ve never felt <br />
+                  I wasn’t expecting to laugh all night <br />
+                  To raise around like little kids and ride around town singing songs of life <br />
+                  I never expected to be your first kiss <br />
+                  To be chosen by someone out of bravery and clarity <br />
+                  I wasn’t expecting to be there in the middle of the night <br />
+                  To think of your face and everything else twice <br />
+                  But mostly, I never expected to miss you so much <br />
+                  Time flies by so slow when I’m not in your arms
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">04/06/19 10:18 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Es que tú eres mi kryptonita, nena
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">04/06/19 10:50 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Fak, eso significa que el aire está lleno de sumatorias
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">17/06/19 7:05 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Lo que más me gusta de ti es la manera en que me haces sentir cuando estás cerca.
+                  Cómo me aceleras el corazón cuando te veo, cómo se me eriza la piel cuando me abrazas, el que me lleves a tocar el cielo con cada beso. <br />
+                  Lo que más me gusta de ti es la manera en qué me haces sentir cuando estás lejos.
+                  Cómo me nublas la mente con tu recuerdo, cómo me alegras el día con tus mensajes, el nudo que se me hace en la garganta cuando quiero decirte algo y no te tengo. <br />
+                  Lo que más me gusta de ti es la manera en que me haces sentir en todo momento.
+                  Porque no importa el tiempo ni la distancia, yo siempre te llevo dentro.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">13/07/19 11:19 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Quería aprovechar que es el último día del año para enviarte esto.
+                  <br /><br />
+                  Viendo hacia atrás, hoy quiero agradecerte por todo lo que has hecho por mí,
+                  tal vez sin darte cuenta. No te escribo como novio o como amigo,
+                  sino como una persona a quien le cambiaste la vida por completo,
+                  aunque haya sido a través de pequeños detalles.
+                  <br /><br />
+                  Gracias, Romi, por ayudarme a encontrar partes de mí que no sabía que tenía.
+                  Por devolverme al yo cursi y romántico. <br />
+                  Gracias por convertir a dos muy buenos amigos en mis mejores amigos y confidentes. <br />
+                  Gracias por darme una razón para aprender cosas nuevas, aunque todavía me falte práctica. <br />
+                  Gracias por permitirme conocer a personas tan cool como Alejo, Pau, Xime, Alex o Luis. <br />
+                  Gracias por mostrarme tu hermosa tierra. <br />
+                  Gracias por incitarme a vivir nuevas experiencias,
+                  como bailar en una fiesta, viajar solo, hacer del carro un cine
+                  o invitar a salir a una chava. <br />
+                  Gracias por ayudarme y acompañarme a conocer más de mi querida Monterrey. <br />
+                  Gracias por crear tema de conversación para hablar verdaderamente
+                  con mi familia y acercarme más a ella. <br />
+                  Gracias por ayudarme a expresar mis sentimientos. <br />
+                  Gracias por haberme ayudado a recuperar la fe en Dios. <br />
+                  Gracias por enseñarme a besar, abrazar y decir te amo de verdad.
+                  <br /><br />
+                  Gracias, y esto nunca me cansaré de decirlo, por decirme que sí
+                  y permitirme entrar a tu vida.
+                  <br /><br />
+                  Este 2019, mi 2019, se trató casi en su totalidad de ti. Desde
+                  Marzo hasta el día de hoy, no hubo día en que no pensara en ti y,
+                  la verdad, no se me ocurre una mejor manera de haber pasado este año.
+                  <br /><br />
+                  Tú fuiste lo mejor que me pudo haber pasado en el 2019.
+                  <br /><br />
+                  De todo corazón, gracias.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">31/12/19 1:25 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  Oye, estaba viendo esta serie y la chava le dice al chavo cuando
+                  se da cuenta que lo ama... y no se, me puse a pensar, y se que,
+                  un día me enamoré de ti pero quería como acordarme así exactamente
+                  porque lamentablemente no lo escribí ni nada, y cuando llegaste
+                  a Chihuahua fuimos a misa con mi mamá y estaba la boda ¿no? Y yo
+                  me levante para irme a confesar y cuando fue el momento de la Paz
+                  no estaba con ustedes pero volteaba y volteaba a ver si me veías
+                  y tú estabas saludando a todos los de enfrente y enseguida y así
+                  con una sonrisota y dije: lo amo, y luego volteaste a buscarme y
+                  mi mamá también porque me había movido y mi mamá me mando un beso
+                  y tú me sonreíste y me acuerdo pensar que estaba muy muy muy feliz
+                  de que hubieras ido, incluso aunque me sintiera fatal.
+                  <br />
+                  Te amo desde ese momento Óscar Guevara. Y te agradezco tanto porque
+                  investigaste lo que era la depresión, te pusiste en mis zapatos y
+                  lo explicaste mejor que cualquier persona (incluso yo o mi doctora)
+                  pudiera haberlo dicho ese día en tu speech del balcón en el hotel.
+                  <br />
+                  Tu dijiste “que no sea tu depresión la que escoja, sino tu”. Y
+                  enserio si te escogí a ti. Tenía tanto miedo por mucho tiempo de
+                  haberte escogido por necesidad o porque estaba triste, incluso
+                  después de haber tenido ese momento de claridad en el juego de
+                  fútbol (o gracias a las palabras de Ximena). Pero enserio no, me
+                  gusta mucho que hayas y sigas luchando ser parte de mi vida y que
+                  me des a mi el privilegio de ser parte de la tuya.
+                  <br />
+                  Te amo mucho enserio, aunque sea poco lo que llevemos. Tenía que
+                  decirlo. Jajajajajajajaja sorry por lo cursi my friend, ya te tocaba.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">06/01/20 1:55 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Σ 'αγαπώ ❤️
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">02/03/20 10:43 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Y se me acelera el palpitar cuando te tengo de frente,
+                  a punto de darnos un beso
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">04/03/20 8:30 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  If it takes time, then it is worth it. If you feel to be mine,
+                  it will be with time. With time I will love you. With time I will
+                  get to know you. With time my life and your life will be connected.
+                  Forever grateful of time. Not afraid, not desperate, nor nearly enough.
+                  Just time. Me and you. Worth it.
+                  <br /><br /><br /><br />
+                  As the clock ticks and the universe expands, God's plans unveil
+                  and give a chance. A chance to be free. A chance to give and a
+                  chance to receive. For whatever the reason, for whatever the
+                  outcome, in his palms is a chance of a lifetime.
+                  <br /><br /><br /><br />
+                  Somehow time, magic and space gave us a place to lay our heads.
+                  Our souls. Our bodies. To kiss your lips, your eyes and your light.
+                  To embrace your thoughts, your dreams and our hearts. In his palms,
+                  with time, my love, your love, just love.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">05/03/20 12:44 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Nop, pero me dio suerte contigo
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">19/03/20 9:53 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Yo creo que el altar más bello de Dios es el que ofrece una familia
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">22/03/20 9:27 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  No importa cuánto tiempo pase
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">27/03/20 10:40 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Yo te sigo amando
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">27/03/20 10:40 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Y te sigo esperando
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">27/03/20 10:40 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Siempre.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">27/03/20 10:40 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Pinky promise
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">29/03/20 8:34 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  I'll always love you.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">05/04/20 12:45 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Señal DiosG, got it? Got it?
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">09/04/20 3:18 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Como que siguen siendo inesperados, como un privilegio o un regalo
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">12/04/20 12:36 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Romi, God is especially fond of you ❤️
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">12/04/20 4:50 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Love You 3367
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">26/04/20 3:05 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  Extraño tus labios y tocarte. Extraño que me des abrazos y me
+                  agarres la mano. Extraño ver películas y no hablar por un rato
+                  solo voltearte a ver a los ojos. Extraño reírme en tu carro o
+                  poner música y cantarla a todo volumen. O comprar comida y ser
+                  unos gordos jeje o besarte, besarte mucho mucho mucho. Sentir tu
+                  piel aunque me de mucha vergüenza y hacerte cariños en el pelo.
+                  Extraño ir a misa contigo, o caminar por el campus, discutir
+                  sobre cosas que no entiendo o sobre cosas que si. Pero sobre todo,
+                  extraño verte y sentirte a mi lado.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">26/04/20 11:07 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Volveremos a amarnos en cortito, como nos gusta, como debe ser
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">26/04/20 11:38 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  El saber que, al final, de ti depende todo y no tienes que andar
+                  esperando que alguien más lo haga por ti
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">20/05/20 12:19 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Gracias por demostrarme que la vida siempre puede ser más bonita
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">24/05/20 10:45 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Eres la variable más bonita con la que me he topado
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">27/05/20 12:11 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Romina Seáñez, te amo con todo mi corazoncito regio.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">04/06/20 12:27 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Me haces muy feliz
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">21/06/20 3:25 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  Romi, te amo completamente.
+                  <br />
+                  Te amo por este abanico tan grande de posibilidades y personalidades
+                  que puedes abarcar.
+                  <br />
+                  Te amo porque puedes ser la Romi inocente y también la que sabe
+                  mucho de todo. Puedes ser la más tierna o la más fiera. Puedes
+                  dejarte llevar por la tranquilidad del día, o ser la más determinada
+                  a conseguir sus metas. Puedes ser la que baila ballet y también
+                  la que se viste como vato. La que sube cerros, o la que se deja
+                  caer con la comida. La que escucha música clásica y la que baila
+                  reggaetón. La que ama a las princesas lo mismo que a los superhéroes.
+                  La que sigue todas las reglas, y también la más rebelde.
+                  <br /><br />
+                  Te amo porque nunca dejas de sorprenderme y cada momento que puedo
+                  interactuar contigo es toda una nueva aventura. <br />
+                  Porque no sé si me tocará la Romi mexicana, o la que ni siquiera
+                  come salsa. La que llora por lo que sea, o la que se enfrenta a
+                  cualquier miedo que tenga. La que siente que no puede hacer nada
+                  o la que ha salido adelante de todas las batallas que le han puesto
+                  hasta ahora. La Romi que reflexiona de la manera más profunda, o
+                  la que de repente ladra. La que besa con toda la pasión del mundo,
+                  o la que se apena por sentir la piel de alguien más.
+                  Porque puede que me toque la Romi loca, la chiflada, la chistosa,
+                  la nerdy, la enojona, la sexy, la filosófica o una mezcla de
+                  todas juntas.
+                  <br /><br />
+                  Te amo por todo lo que eres y representas para mí.
+                  <br />
+                  Porque puedes ser mi novia, y también mi mejor amiga.
+                  <br />
+                  Puedes ser mi más grande apoyo, o mi mayor crítica.
+                  <br />
+                  Puedes ser mi fortaleza, y a veces también ser quien me desquicia.
+                  <br />
+                  Puedes ser la mujer a la que amo y con la que quiero pasar el resto de mi vida.
+                  <br /><br />
+                  Te amo porque siempre eres tú. Con todas tus facetas, con todos
+                  tus defectos, con todos tus miedos y preocupaciones, tus deseos y metas.
+                  <br /><br />
+                  Te amo completamente, Romi. Desde el inicio hasta el final.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">29/06/20 11:29 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  In the middle of excitement and joy, my thoughts go back to you.
+                  <br />
+                  In the middle of boredom and routine, my thoughts go back to you.
+                  <br />
+                  In the middles of praying and sleeping, my thoughts go back to you.
+                  <br /><br />
+                  You have taken by mind by abduction and made it a better place
+                  to inhabit. You have created a space to feel safe between us.
+                  <br /><br />
+                  I talk to God and I tell him of the wonderful man that you are.
+                  Of your heart. Of your laugh. And he tells me he already knows.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">06/07/20 2:36 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  Porque fuera de broma no quiero vivir en un mundo donde no estás
+                  tú, Y NO ME LA VAYAS A CAGAR POR LO CHEEST DE ESTE MENSAJE, SOLO
+                  LÉELO Y ACÉPTALO
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">16/07/20 12:18 a.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message oscar initial last">
+              <h4 class="name">Oscar</h4>
+              <div class="text-container">
+                <span class="text">
+                  I just know. Never ever believe anything else.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">19/07/20 11:55 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  I’ll say it for as long as I can... I love you 3000.
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">29/07/20 11:36 p.m.</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="message romi initial last">
+              <h4 class="name">Romi</h4>
+              <div class="text-container">
+                <span class="text">
+                  Ya se que ya lo he dicho montones pero nunca había extrañado
+                  tanto a alguien
+                </span>
+                <span class="wa-space"></span>
+              </div>
+              <span class="date">05/08/20 4:03 a.m.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="title col-6 col-sm-6 col-md-8">
+                <a href="index.html">
+                  <h1>Avengers Assemble</h1>
+                </a>
+              </div>
+              <div class="nav-bttn col-3 col-sm-3 col-md-2">
+                <a href="moments.html">Moments</a>
+              </div>
+              <div class="nav-bttn col-3 col-sm-3 col-md-2">
+                <a href="messages.html">Messages</a>
+              </div>
+            </div>
+          </div>
+          <div class="copy-container col-12">
+            <div class="copyright">
+              <span>©</span>
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              <span>, made with </span>
+              <i class="fas fa-heart"></i>
+              <span> by Oscar Guevara</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/9499308d56.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts-min.js"></script>
+  </body>
+</html>
